@@ -16,7 +16,7 @@ const App = () => {
   }
   return (
     <main>
-      <h1 className="title">GitHub Card</h1>
+      <h1 className="title">GitHub Profile Search</h1>
       <Form onSubmit={addCard} />
       <CardList profileList={profileList} />
     </main>

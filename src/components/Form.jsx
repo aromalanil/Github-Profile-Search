@@ -5,20 +5,26 @@ const Form = (props) => {
 
   function handleForm(event) {
     event.preventDefault();
-    props.onSubmit(userName);
+    if(userName){
+      props.onSubmit(userName);
+    }
+    else{
+      alert("Please enter the Username");
+    }
     setUserName("");
   }
   return (
-    <form onSubmit={handleForm}>
+    <form onSubmit={handleForm} className="search-form">
       <input
         placeholder="Github Username"
+        className="text-input"
         type="text"
         name="username"
         id="username"
         value={userName}
         onChange={(event)=>setUserName(event.target.value)}
       />
-      <button type="submit">Search</button>
+      <button className="btn" type="submit">Search</button>
     </form>
   );
 };
