@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 main {
   width: 100vw;
-  padding:5rem 0;
+  padding:3rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 h1 {
   font-size: 4rem;
+  font-family: 'Pacifico', cursive;
 }
 
 .search-form {
@@ -62,7 +64,7 @@ h1 {
 
 .card-list {
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
   width: 80%;
   display: grid;
   grid-gap: 1.5rem;

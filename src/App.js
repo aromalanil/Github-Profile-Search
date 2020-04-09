@@ -10,7 +10,7 @@ const App = () => {
     let jsonResponse = await fetch(`https://api.github.com/users/${userName}`).then(res => res.json());
     
     if (!profileList.includes(jsonResponse)) {
-      let newProfileList = [...profileList, jsonResponse];
+      let newProfileList = [jsonResponse,...profileList];
       setProfileList(newProfileList);
     }
   }
